@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <meta charset="utf-8">
+        <meta name="description" content="A customisable calculator designed for FIFA 21 to allow you to calculate your own transfer fees based on the stats of the players">
+        <meta name="author" content="Jareth">
+        <meta name="keywords" content="FIFA, Transfer Calculator">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="css/styleSheet.css"/>
+        <link rel="icon" type="image/png" href="images/favicon.png" sizes="16x16"/>
+        <script src="js/scripts.js"></script>
+        
+        <title>FIFA Transfer Calculator</title>
+
+    </head>
+
+    <body>
+
+        <header>
+            <img src="images/WebsiteLogo.png" alt="Website Logo Image, Calculator with ball behind it" id="logo">
+
+            <h1>FIFA Transfer Calculator</h1>
+            
+            <div id="navBar">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="downloads.html">Downloads</a></li>
+                        <li><a class="active" href="contactUs.html">Contact Us</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <div class="container">
+                <div class="mainBar">
+                    <div class="article">
+                        <h2>Contact Us</h2>
+                        <form name="contactUsForm" id="form" onsubmit="return validateForm()" method="post">
+                            <ul>
+                                <li>Full Name: <small>*Required</small></li>
+                                <li><input type="text" name="name" placeholder="Enter Name Here" size="25" onfocus="this.select()"></li>
+                                <li>Email: <small>*Required</small></li>
+                                <li><input type="email" name="email" placeholder="Enter Email Here" size="25" onfocus="this.select()"></li>
+                                <li>Phone Number: <small>*Required</small></li>
+                                <li><input type="tel" name="telNo" placeholder="Enter Phone Number Here" size="25" onfocus="this.select()"></li>
+                                <li>Program Version:</li>
+                                <li><select name="versionNo">
+                                    <option selected>None</option>
+                                    <option>V1.0</option>
+                                    <option>V1.1</option>
+                                    <option>V1.2</option>
+                                    <option>V1.3</option>
+                                    <option>V1.4</option>
+                                    </select></li>
+                                <li>Message: <small>*Required</small></li>
+                                <li><textarea name="message" cols="35" rows="15" onfocus="this.select" placeholder="Enter Message Here"></textarea></li>
+                                <li><input type="submit" name="submitButton" value="Submit"></li>
+                            </ul>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="sideBar">
+                    <div class="sideBarItem">
+                        <h3>Latest Download</h3>
+                        <a href="https://drive.google.com/file/d/1wYs0-ZiHzzC20r4Lh6uP1eQ3gcMgEFeo/view?usp=sharing" class="link" target="blank">Download Link</a>
+                        <br>
+                        <a href="https://drive.google.com/file/d/1yrTHUCZBHXsQIpIFcnvZD7Q4u_FmNzxa/view?usp=sharing" class="link" target="blank">Player File Download</a>
+                    </div>
+                    <div class="sideBarItem">
+                        <h3>Installation Instructions</h3>
+                        <a href="windowsInstallation.html" class="link">Installation for Windows</a>
+                        <br>
+                        <a href="linuxInstallation.html" class="link">Installation for Linux</a>
+                    </div>
+                    <div class="sideBarItem">
+                        <h3>Quick Contact Info</h3>
+                        <p>Jareth McCardell</p>
+                        <p>Phone no: 07511396597</p>
+                        <p>Email: mccardellj@ulster.ac.uk</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <div class="footer">
+                <p>Copyright &#169; 2021</p>
+            </div>
+        </footer>
+
+    </body>
+</html>
